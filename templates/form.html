@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Form for Session04
+        </title>
+        <meta charset="UTF-8">
+        <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+        <script src="../static/js/main.js" defer></script>
+    </head>
+    <body>
+        <h1>Trivia Question:</h1>
+        <h3>Who is this Character? Use "_" key instead of space</h3>
+        <img height="auto" width=200px src="../static/img/Rosalina.jpg" alt="Not Telling">
+        <form action="/form" method = "POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value={{curr_name}}><br>
+            <input type="submit" value="Submit">
+        </form>
+        
+        <h2> {{correctness}}</h2>
+        
+    </body>
+</html>
